@@ -1,0 +1,513 @@
+:root {
+    --
+}
+
+html {
+    height:100%
+} 
+
+body {
+    margin:0px;
+    min-height:100%
+    margin-bottom: -40px;
+}
+
+
+p {
+    font-weight: bold;
+    font-size: 24px;
+    font-family: calibri;
+}
+
+h1 {
+    font-family: calibri;
+    font-size: 40px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    position:sticky; 
+    background:red;
+    flex-wrap: wrap;
+    top: 0;
+    height: 15vh;
+    font-size: 25px;
+    font-family: Calibri;
+    font-weight: bold;
+    color: white;
+  }
+
+.logo-big img {
+    position:absolute;
+    width: 20vw;
+    height: 30vh;
+    margin-left: -150px;
+    
+}
+
+.logo-small {
+    position: relative;
+    transform: scale(0.5);
+}
+
+.nav-size {
+    top: 0px;
+}
+
+nav ul {
+    display: flex;
+    position: relative;
+    top: -50px;
+    list-style: none;
+    align-items: center;
+    padding-right: 50px;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 0px 50px;
+    cursor: pointer;
+}
+  
+.link-1:hover,
+.link-2:hover,
+.link-3:hover,
+.link-4:hover {
+      transform: scale(1.5);   
+  }
+
+.link-logo:hover {
+    transform: scale(0.6);
+}
+
+nav ul li a {
+    text-decoration:none;
+    color: white;
+}
+
+
+.home {
+    display: flex;
+    justify-content: center;
+    height: 80vh;
+}
+
+.home div img {
+    display: flex;
+    height: 30vh;
+    width: 30wh:
+}
+
+.starters-index {
+    align-self: flex-end;
+}
+
+/* overview */
+.welcome {
+    display: flex;
+    flex-direction: column ;
+    align-items: center;
+}
+
+.welcome img {
+    height: 60vh;
+    width: 40vw;
+}
+
+.characters {
+    display: flex;
+    flex-direction: column ;
+    align-items: center;
+}
+
+.characters img {
+    width: 35vw;
+    height: 65vh;
+}
+
+.companion {
+    display: flex;
+    flex-direction: column ;
+    align-items: center;
+}
+
+.companion img {
+    width: 30vw;
+    height: 35vh;
+}
+
+.friends {
+    display: flex;
+    flex-direction: column ;
+    align-items: center;
+}
+
+.friends img {
+    width: 37vw;
+    height: 65vh;
+}
+
+.flare {
+    display: flex;
+    flex-direction: column ;
+    align-items: center;
+}
+
+.flare img {
+    width: 30vw;
+    height: 70vh;
+}
+
+.elite {
+    display: flex;
+    flex-direction: column ;
+    align-items: center;
+}
+
+/* pokedex */
+.catch {
+    display: flex;
+    flex-direction: column ;
+    align-items: center;
+}
+
+.catch img {
+    width: 35vw;
+    height: 100vh;
+}
+
+.sycamore {
+    margin-top: 100px;
+    display: flex;
+    overflow: hidden;
+  }
+  
+  .syc-img {
+    float: left;
+  }
+
+  .syc-img img {
+    width: 25vw;
+    height: 60vh;
+  }
+  
+  .syc-text {
+    float: right;
+  }
+
+  .pokedex {
+    margin-top: 100px;
+    display: flex;
+    overflow: hidden;
+  }
+  
+  .dex-img {
+    float: left;
+  }
+
+  .dex-img img {
+    width: 25vw;
+    height: 60vh;
+  }
+  
+  .dex-text {
+    float: right;
+  }
+
+.discover {
+    display: flex;
+    justify-content: center;
+    flex-direction: column ;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.disc-title {
+    display: flex;
+    justify-content: center;
+}
+
+.discover img {
+    width: 70vw;
+    height: 80vh;
+}
+
+/* Brand new features */
+.features {
+    display: flex;
+    flex-direction: column ;
+    align-items: center;
+}
+
+.features img {
+    height: 60vh;
+    width: 40vw;
+}
+
+.amie {
+    display: flex;
+    flex-direction: column ;
+    align-items: center;
+}
+
+.amie img {
+    height: 45vh;
+    width: 35vw;
+}
+
+.supertraining h1 {
+    display: flex;
+    justify-content: center;
+}
+
+.supertraining div {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.supertraining p {
+    display: flex;
+    justify-content: center;
+}
+
+.supertraining div img {
+    height: 45vh;
+    width: 35vw;
+}
+
+.horde {
+    display: flex;
+    flex-direction: column ;
+    align-items: center;
+}
+
+.horde img {
+    height: 40vh;
+    width: 30vw;
+}
+
+.mega {
+    display: flex;
+    flex-direction: column ;
+    align-items: center;
+}
+
+.mega img {
+    height: 80vh;
+    width: 45vw;
+}
+
+/* Store */
+.games {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.stores {
+  display: flex;
+  justify-content: center;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    float: left;
+
+}
+
+.stores div {
+    display: flex;
+    flex-direction: column;
+    float: right;
+}
+
+/* Reviews */
+.reviews div {
+    display: flex;
+    flex-direction: row;
+}
+
+.reviews img {
+    height: 15vh;
+    width: 10vw;
+}
+
+/* Screenshots */
+.images {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.images img {
+    height: 40vh;
+    width: 40vw;
+}
+
+/* Contactformulier */
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 400px;
+}
+
+form {
+    width:800px; 
+    margin-left:500px;
+    margin-bottom: 1%;
+    font-size: large;
+}
+
+label, input { 
+    float:left; 
+}
+
+label { 
+    display:block;
+    clear:left; 
+    margin-top:10px; 
+    width:70px; 
+}
+
+footer {
+    position: sticky;
+    background: red;
+    font-family: calibri;
+    width: 100vw;
+    height: 40px;
+    z-index: 1;
+    
+}
+
+footer p {
+    float: left;
+    margin-right: 10px;
+}
+
+footer img {
+    float: left;
+    width: 8vw;
+    height: 10vh;
+}
+
+.red-space {
+    background-color: red;
+    width: 100%;
+    height: 40px;
+  }
+
+/* tablet  */
+@media screen and (max-width: 768px){
+    nav {
+        width: 100%;
+    }
+}
+
+/* telefoon */
+@media screen and (max-width:576px){
+    
+    section {
+       width:100%;
+    }
+
+
+    nav {
+        position: relative;
+        width:100%;
+        height: 22vh;
+    }
+
+    nav ul {
+        display: flex;
+        position: relative;
+        list-style: none;
+        flex-direction: column;
+    }
+
+    .logo-big { /* index logo  */
+        position: relative;
+        top: -60%;
+        transform: scale(1.1, 0.4)!important;
+    }
+
+    .logo-small { /* logo other pages */
+        position: relative;
+        top: -40%;
+        margin-left: -25%;
+        transform: scale(0.15, 0.15);
+        content: url("./img/logo-big.png");
+    }
+
+    nav ul li a {
+        font-size: 15px;
+    }
+
+    h1 {
+        font-size: 30px;
+        text-align: center;
+        top: 100px;
+    }
+
+    p {
+        font-size: 15px;
+        text-align: center;
+        top: 90px;
+    }
+
+    .home {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 50px;
+    }
+    
+    .map-index .mega-index {
+        width: 85vw;
+        height: 35vh;
+    }
+    
+    .starters-index {
+        align-self: flex-start;
+        transform: scale(0.7)
+    }
+
+    .welcome img {
+        width: 85vw;
+        height: 35vh;
+    }
+
+    .characters img {
+        width: 75vw;
+        height: 35vh;
+    }
+
+    .companion img {
+        width: 75vw;
+        height: 25vh;
+    }
+
+    .friends img {
+        width: 75vw;
+        height: 35vh;
+    }
+
+    .flare img {
+        width: 65vw;
+        height: 45vh;
+    }
+
+    .elite img {
+        width: 85vw;
+        height: 60vh;
+    }
+
+    .catch img {
+        width: 85vw;
+        height: 70vh;
+    }
