@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="gwen-game-style.css" rel="stylesheet" />
+    <title>Game</title>
+</head>
+<body>
+    <div>
+        <button type="submit" onClick="refreshPage()">Restart</button>
+        <img id="win" src="./img/win.gif">
+    </div>
+    <div class="game">
+        
+        <div class="player">
+            <img id="player_img" src="./img/player.gif">
+        </div>
+
+        <div class="obstacle">
+            <img src="./img/obstacle.png">
+        </div>
+
+        <div class="candies"></div>
+        <div class="candy">
+            <img id="candy" src="./img/candy.png">
+            <img id="candy_2" src="./img/candy.png">
+            <img id="candy_3" src="./img/candy.png">
+            <img id="candy_4" src="./img/candy.png">
+
+        </div>
+        <div class="game-over">Game Over</div>
+        <h2 class="score"></h2>
+    </div>
+
+ <div class="grass">
+ </div>
+    
+    
+    <script src="gwen-game-app.js"></script>
+</body>
+</html>
