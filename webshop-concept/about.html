@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="style.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <title>Marvel Comics</title>
+</head>
+
+<body class="d-grid gap-3 bg-light">
+  <nav class="navbar navbar-expand-lg bg-danger">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="./index.html"><img src="./img/nav_logo.png" alt="Marvel Comics" width="80"
+          height="60"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link stroke fw-bold" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle stroke fw-bold" href="./characters.html" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Characters
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="characters.html">Show All</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="avengers.html">Avengers</a></li>
+              <li><a class="dropdown-item" href="captain-america.html">Captain America</a></li>
+              <li><a class="dropdown-item" href="thor.html">Thor</a></li>
+              <li><a class="dropdown-item" href="spiderman.html">Spider-Man</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="releases.html" class="nav-link stroke fw-bold">New Releases</a>
+          </li>
+          <li class="nav-item active">
+            <a href="about.html" class="nav-link stroke fw-bold">About</a>
+          </li>
+        </ul>
+        <img src="./img/profile.png" alt="login" width="40" height="40">
+        <img src="./img/cart.png" alt="login" width="70" height="40" data-bs-toggle="modal" data-bs-target="#cart">
+      </div>
+    </div>
+  </nav>
+
+  <section class="container d-flex justify-content-between" style="height: 100px">
+    <img src="./img/Marvel_Logo.png">
+    <a href="./faq.html"><img src="./img/faq_button.png" style="height: 100px;"></a>
+  </section>
+
+  <section class="container d-flex justify-content-lg-start">
+    <h3 class="fs-4">©2024
+      Marvel Entertainment, LLC, a wholly-owned
+      <br>subsidiary of The Walt Disney Company, is one
+      <br>of the world's most prominent character-based entertainment companies,
+      <br>built on a proven library of more than 8,000 characters featured in
+      <br>a variety of media over seventy-five years.
+      <br>Marvel utilizes its character franchises in
+      <br>entertainment, licensing and publishing.
+      <br>For more information visit marvel.com.
+    </h3>
+  </section>
+
+  <section class="container">
+    <h3>Any questions or comments? Contact us!</h3>
+
+
+    <form class="row g-3">
+      <div class="col-md-6">
+        <label for="firstname" class="form-label">First name</label>
+        <input type="text" class="form-control">
+      </div>
+      <div class="col-md-6">
+        <label for="lastname" class="form-label">Last name</label>
+        <input type="text" class="form-control">
+      </div>
+
+      <div class="col-md-6">
+        <label for="phone" class="form-label">Phone</label>
+        <input type="number" class="form-control">
+      </div>
+      <div class="col-md-6">
+        <label for="email" class="form-label">Email</label>
+        <input type="email" class="form-control">
+      </div>
+
+      <div class="mb-3">
+        <label for="comments" class="form-label">Comments or Questions</label>
+        <textarea class="form-control"></textarea>
+      </div>
+      <div class="col-12">
+        <button type="submit" class="btn btn-primary">Send</button>
+      </div>
+    </form>
+  </section>
+
+  <footer class="text-center fw-bold">
+    <p>©2024 Marvel</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+
+</html>

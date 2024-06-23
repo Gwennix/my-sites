@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="style.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <title>Marvel Comics</title>
+</head>
+
+<body class="bg-danger">
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="./index.html"><img src="./img/nav_logo.png" alt="Marvel Comics" width="80"
+          height="60"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link stroke fw-bold" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle stroke fw-bold" href="./characters.html" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Characters
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="characters.html">Show All</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="avengers.html">Avengers</a></li>
+              <li><a class="dropdown-item" href="captain-america.html">Captain America</a></li>
+              <li><a class="dropdown-item" href="thor.html">Thor</a></li>
+              <li><a class="dropdown-item" href="spiderman.html">Spider-Man</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="releases.html" class="nav-link stroke fw-bold">New Releases</a>
+          </li>
+          <li class="nav-item">
+            <a href="about.html" class="nav-link stroke fw-bold">About</a>
+          </li>
+        </ul>
+        <img src="./img/profile.png" alt="login" width="40" height="40">
+        <img src="./img/cart.png" alt="login" width="70" height="40">
+      </div>
+    </div>
+  </nav>
+
+
+  <div class="container mt-3 bg-light">
+    <div class="container text-center">
+      <h3 class="mt-3 mb-3">17 april - 23 april 2024</h3>
+      <div class="cover-size">
+
+        <div class="row-cols-auto">
+          <div class="col">
+            <img src="./img/comics/Avengers_Twilight_Vol_1_5_Cover_A.webp" alt="comic cover" data-bs-toggle="modal"
+              data-bs-target="#comic_1">
+            <img src="./img/comics/Black_Widow_&_Hawkeye_Vol_1_2.webp" alt="comic cover">
+            <img src="./img/comics/Captain_Marvel_Vol_11_7.webp" alt="comic cover">
+            <img src="./img/comics/Giant-Size_Hulk_Vol_3_1.webp" alt="comic cover">
+          </div>
+
+          <div class="col">
+            <img class="mt-1 mb-3" src="./img/comics/Fall_of_the_House_of_X_Vol_1_4.webp" alt="comic cover">
+            <img class="mt-1 mb-3" src="./img/comics/Miles_Morales_Spider-Man_Vol_2_19.webp" alt="comic cover">
+            <img class="mt-1 mb-3" src="./img/comics/Spectacular_Spider-Men_Vol_1_2.webp" alt="comic cover">
+            <img class="mt-1 mb-3" src="./img/comics/What_If... _Venom_Vol_1_3.webp" alt="comic cover">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="comic_1" tabindex="-1" aria-labelledby="comic_1_Label" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="comic_1_Label">Avengers Twilight (2024) #5</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body d-flex mx-3">
+          <img src="./img/comics/Avengers_Twilight_Vol_1_5_Cover_A.webp" style="height: 250px;">
+          <div class="row mx-3">
+            <p>"America and democracy are under attack! Can THE AVENGERS of tomorrow save a country from itself, as
+              their greatest enemy dismantles everything CAPTAIN AMERICA holds dear? It’s a battle decades in the
+              making, and no one is safe!"</p>
+            <h3>$3,99</h3>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-bs-target="#comic_1_reviews"
+            data-bs-toggle="modal">Reviews</button>
+          <button type="button" class="btn btn-success">Add to Basket</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="comic_1_reviews" aria-hidden="true" aria-labelledby="comic_1_Label2" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="comic_1_Label2">Avengers Twilight (2024) #5 Reviews</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p class="fw-bold">@AvengersFan2004</p>
+          <img src="./img/fivestars.png" style="width: 150px;">
+          <p>“Awesome epic and everything inbetween”</p>
+          <p class="fw-bold">@caphater666</p>
+          <img src="./img/onestars.png" style="width: 150px;">
+          <p>“captain america is in this comic so it sucks”</p>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-primary" data-bs-dismiss="modal">Write a review</button>
+          <button class="btn btn-danger" data-bs-dismiss="modal">Cancel</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="text-center fw-bold">
+    <p class="text-white">©2024 Marvel</p>
+  </footer>
+
+</body>
+
+</html>

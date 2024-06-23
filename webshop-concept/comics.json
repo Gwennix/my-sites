@@ -1,0 +1,112 @@
+[
+    {
+      "number": 0, 
+      "title": "Avengers (1963) #1",
+      "img": "./img/comics/Avengers_Vol_1_1.webp"
+    },
+    {
+      "number": 1, 
+      "title": "Avengers (1963) #4",
+      "img": "./img/comics/Avengers_Vol_1_4.webp"
+    },
+    {
+      "number": 2, 
+      "title": "Avengers (1963) #8",
+      "img": "./img/comics/Avengers_Vol_1_8.webp"
+    },
+    {
+      "number": 3, 
+      "title": "Avengers (1963) #500",
+      "img": "./img/comics/Avengers_Vol_1_500.webp"
+    },
+    {
+      "number": 4, 
+      "title": "Avengers (2012) #1",
+      "img": "./img/comics/Avengers_Vol_5_1.webp"
+    },
+    {
+      "number": 5, 
+      "title": "New Avengers (2013) #1",
+      "img": "./img/comics/New_Avengers_Vol_3_1.webp"
+    },
+    {
+      "number": 6, 
+      "title": "New Avengers (2005) #7",
+      "img": "./img/comics/New_Avengers_Vol_1_7.webp"
+    },
+    {
+      "number": 7, 
+      "title": "Avengers (1963) #675",
+      "img": "./img/comics/Avengers_Vol_1_675.webp"
+    },
+    {
+      "number": 8, 
+      "title": "Avengers (2023) #9",
+      "img": "./img/comics/Avengers_Vol_9_9.webp"
+    },
+    {
+      "number": 9, 
+      "title": "Avengers (2023) #10",
+      "img": "./img/comics/Avengers_Vol_9_10.webp"
+    },
+    {
+      "number": 10, 
+      "title": "Avengers (2023) #11",
+      "img": "./img/comics/Avengers_Vol_9_11.webp"
+    },
+    {
+      "number": 11, 
+      "title": "Avengers (2023) #12",
+      "img": "./img/comics/Avengers_Vol_9_12.webp"
+    },
+    {
+      "number": 12, 
+      "title": "Captain America (1960) #109",
+      "img": "./img/comics/Captain_America_Vol_1_109.webp"
+    },
+    {
+      "number": 13, 
+      "title": "Captain America (1960) #117",
+      "img": "./img/comics/Captain_America_Vol_1_117.webp"
+    },
+    {
+      "number": 14, 
+      "title": "Captain America (2018) #1",
+      "img": "./img/comics/Captain_America_Vol_9_1.webp"
+    },
+    {
+      "number": 15, 
+      "title": "Captain America Comics (1941) #1",
+      "img": "./img/comics/Captain_America_Comics_Vol_1_1.webp"
+    },
+    {
+      "number": 16, 
+      "title": "Secret Empire (2017) #0",
+      "img": "./img/comics/Secret_Empire_Vol_1_0.webp"
+    },
+    {
+      "number": 17, 
+      "title": "Civil War (2006) #1",
+      "img": "./img/comics/Civil_War_Vol_1_1.webp"
+    },
+    {
+      "number": 18, 
+      "title": "Captain America (2023) #6",
+      "img": "./img/comics/Captain_America_Vol_11_6.webp"
+    },
+    {
+      "number": 19, 
+      "title": "Captain America (2023) #7",
+      "img": "./img/comics/Captain_America_Vol_11_7.webp"
+    },
+    {
+      "number": 20, 
+      "title": "Captain America (2023) #8",
+      "img": "./img/comics/Captain_America_Vol_11_8.webp"
+    },
+    {
+      "number": 21, 
+      "title": "Captain America (2023) #9",
+      "img": "./img/comics/Captain_America_Vol_11_9.webp"
+    }
+]
