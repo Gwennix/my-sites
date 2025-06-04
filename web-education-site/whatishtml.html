@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML | Source</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="prism/prism.css">
+  <link rel="icon" type="image/x-icon" href="./img/panda.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+</head>
+
+<body>
+  <!-- De sidebar -->
+  <nav class="sidebar">
+    <div class="logo">
+      <img src="./img/panda.png" alt="logo">
+    </div>
+    <div class="menu-content">
+      <ul class="menu-items">
+        <li class="item">
+          <a href="./index.html" class="home">HOME</a>
+        </li>
+        <li class="item">
+          <div class="submenu-item">
+            <span>HTML</span>
+            <i class="fa-solid fa-chevron-right"></i>
+          </div>
+          <ul class="menu-items submenu">
+            <div class="menu-title">
+              <i class="fa-solid fa-chevron-left"></i>
+              HTML
+            </div>
+            <li class="item">
+              <a href="./whatishtml.html">Wat is HTML?</a>
+            </li>
+            <li class="item">
+              <a href="#opzet">Opzet van een pagina</a>
+            </li>
+            <li class="item">
+              <a href="#elemattri">Elementen en attributes</a>
+            </li>
+            <li class="item">
+              <a href="#headings">Headings</a>
+            </li>
+            <li class="item">
+              <a href="#paragraphs">Paragraphs</a>
+            </li>
+            <li class="item">
+              <a href="#links">Links</a>
+            </li>
+            <li class="item">
+              <a href="#images">Images</a>
+            </li>
+            <li class="item">
+              <a href="#layout">Layout Tags</a>
+            </li>
+            <li class="item">
+              <a href="#tables">Tables</a>
+            </li>
+            <li class="item">
+              <a href="#forms">Forms</a>
+            </li>
+            <li class="item">
+              <a href="#classes">Classes</a>
+            </li>
+            <li class="item">
+              <a href="#media">Media Tags</a>
+            </li>
+            <li class="item">
+              <a href="#comments">Comments</a>
+            </li>
+          </ul>
+        </li>
+        <li class="item">
+          <div class="submenu-item">
+            <span>CSS</span>
+            <i class="fa-solid fa-chevron-right"></i>
+          </div>
+          <ul class="menu-items submenu">
+            <div class="menu-title">
+              <i class="fa-solid fa-chevron-left"></i>
+              CSS
+            </div>
+            <li class="item">
+              <a href="./watiscss.html">What is css?</a>
+            </li>
+            <li class="item">
+              <a href="#add">Hoe pas je het toe?</a>
+            </li>
+            <li class="item">
+              <a href="#syntax">Syntax</a>
+            </li>
+            <li class="item">
+              <a href="#select">Selectors</a>
+            </li>
+            <li class="item">
+              <a href="#cscomments">Comments</a>
+            </li>
+            <li class="item">
+              <a href="#color">Kleuren</a>
+            </li>
+            <li class="item">
+              <a href="#font">Teksten</a>
+            </li>
+            <li class="item">
+              <a href="#border">Borders</a>
+            </li>
+            <li class="item">
+              <a href="#unit">Units</a>
+            </li>
+            <li class="item">
+              <a href="#background">Achtergronden</a>
+            </li>
+            <li class="item">
+              <a href="#margins">Margin & Padding</a>
+            </li>
+            <li class="item">
+              <a href="#boxes">Box Model</a>
+            </li>
+            <li class="item">
+              <a href="#heights">Height & Width</a>
+            </li>
+            <li class="item">
+              <a href="#link">Links</a>
+            </li>
+            <li class="item">
+              <a href="#list">Lists</a>
+            </li>
+            <li class="item">
+              <a href="#cstable">Tables</a>
+            </li>
+            <li class="item">
+              <a href="#display">Display</a>
+            </li>
+            <li class="item">
+              <a href="#positions">Position</a>
+            </li>
+            <li class="item">
+              <a href="#flexx">Flexbox</a>
+            </li>
+            <li class="item">
+              <a href="#medias">Media queries</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <nav class="navbar">
+    <i class="fa-solid fa-bars" id="sidebar-close"></i>
+    <div class="sourcerers">SOURCE'RERS</div>
+  </nav>
+
+  <main class="main">
+    <section class="pages">
+      <article class="html">
+        <div class="html__text">
+          <h2>WAT IS HTML?</h2>
+          <p>HTML (Hyper Text Markup Language) is een programmeer taal waarmee je websites kan maken.
+            <br>Het werd in 1991 bedacht en ontwikkeld door Tim Berners-Lee die tevens de eerste webbrowser ontwikkelde.
+            <br>Ondertussen zitten we op versie 5 ook wel HTML5 genoemd.
+            <br>Sinds het een ‘Text Markup Language’ is kun jezelf HTML schrijven in alle tekst editors maar
+            <br>het programma van
+            <a href="https://visualstudio.microsoft.com/" target="_blank">Microsoft Visual Studio Code</a> is een goede
+            aanrader.
+          </p>
+        </div>
+        <img src="./img/html.png" alt="html5">
+      </article>
+
+      <article class="opzet">
+        <h2 id="opzet">OPZETTEN VAN EEN PAGINA</h2>
+        <p>Het opzetten van een pagina begint als volgt; je hebt een DOCUMENT, waarin je eerst een ‘index.html’ file in
+          <br>
+          plaats, in die zelfde file in je VS Code tik je op je toetsenbord een ‘!’ in en klik je daarna op ‘ENTER’. Je
+          <br>
+          krijgt daarna een DOC!TYPE te zien in je file, haal dit NIET weg, want dit heb je nodig om content te creëren
+          <br>
+          in je website.
+        </p>
+        <pre><code class="language-html">
+          &lt;!DOCTYPE html>
+          &lt;html lang="en">
+          &lt;head>
+              &lt;meta charset="UTF-8">
+              &lt;meta name="viewport" content="width=device-width, initial-scale=1.0">
+              &lt;title>Document</title>
+          &lt;/head>
+          &lt;body>
+    
+          &lt;/body>
+          &lt;/html>
+        </code></pre>
+        <p>
+          In HTML gebruik je allemaal verschillende tags '
+          &lt;/>'ieder hun eigen specialiteiten met wat je vervolgens wilt
+          <br>
+          doen voor je website, zoals de 'title' tag, dit kan jij veranderen op de manier hoe je dat wilt,
+          <br>
+          voor nu staat hij opgeslagen als 'Document'.
+          <br>
+          <strong>LET OP:</strong> Als je nog verder content wilt creëren moet je dat doen IN de
+          <br>
+          body tag, want als je je website wilt zien op een LIVE SERVER, gaat het programma dat niet vinden.
+        </p>
+      </article>
+
+      <article class="elemattri">
+        <h2 id="elemattri">Elementen en attributes</h2>
+        <p>Een ‘element’ is alles tussen de tags, bijvoorbeeld:</p>
+        <pre>
+          <code class="language-html">
+            &lt;h1> TEKST &lt;/h1>
+          </code>
+        </pre>
+        <p>Dus de h1 is de start van het element, de tekst is de content van het element en de /h1 is het einde van het
+          element.
+          Een element kan ook ‘nested’ elements in zich hebben, dat betekent dat in een element (voornamelijk html, body
+          etc.) er een andere element komt, bijvoorbeeld:
+        </p>
+        <pre>
+            <code class="language-html">
+              &lt;html>
+              &lt;body>
+
+               &lt;h1>TITLE&lt;/h1>
+               &lt;p> Lorem&lt;/p>
+
+               &lt;/body>
+               &lt;/html>
+            </code>
+          </pre>
+        <p>Je hebt ook ‘attributes’, het is extra informatie van een tag. Bijvoorbeeld in de a-tag, zit er een href
+          attribute in: </p>
+        <pre>
+            <code class="language-html">
+              &lt;a href = “https://flexedu.instructure.com/” target = “_blank” > Dashboard in Canvas</a>
+            </code>
+          </pre>
+        <p>‘target = “_blank”’ is niet een verplichte attribute, maar kan soms handig zijn. Het stuurt je namelijk naar
+          de pagina in de ‘href’ in een nieuwe tab in je browser.
+          Of misschien:
+        </p>
+        <pre>
+              <code class="language-html">
+                &lt;div class=“customclassname” id=“customidname”>
+                   &lt;h2 class=“another-custom_name”> Lorem &lt;/h2>
+                &lt;/div>
+          
+              </code>
+            </pre>
+      </article>
+
+      <article class="headings">
+        <h2 id="headings">HEADINGS</h2>
+
+        <p>
+          Wanneer je een stuk tekst schrijft wil je waarschijnlijk ook een mooie titel erboven.
+          <br>Daar komen heading-tags van pas!
+          <br>Ze bestaan uit verschillende groottes die je per tag kan aangeven.
+          <br>De tag schrijf je als &lt;h1> en kan oplopen tot &lt;h6>.
+          <br>
+          <br>Meestal gebruik je de h1 eenmalig per pagina en de h2 en h3 een paar keer.
+        </p>
+      </article>
+
+      <article class="paragraphs">
+        <h2 id="paragraphs">PARAGRAPHS</h2>
+        <p>In HTML is de paragraaf element een p;
+        </p>
+        <p>
+          Voorbeeld:
+
+          Paragrafen kan je gebruiken hoeveel je wilt, als het maar afgesloten is met de juiste tags.
+
+
+          Als je in je code twee aparte paragrafen heb gezet, wordt het zo in je live server weergegeven, een
+          line-height
+          dat je zelf ook in CSS kan aanpassen.
+        </p>
+      </article>
+
+      <article class="links">
+        <h2 id="links">LINKS</h2>
+        <p>De &lt;a> tag is een hyperlink, het stuurt je van de ene pagina naar de ander. Om dit succesvol te doen, heb
+          je
+          in het element &lt;a> de ‘href’ attribuut nodig. In de ‘href’ zet je dan de link naar de andere pagina.</p>
+        <pre>
+              <code class="language-html">
+                &lt;a href = “https://flexedu.instructure.com/”> Dashboard in Canvas< /a>
+              </code>
+            </pre>
+      </article>
+
+      <article class="images">
+        <div class="images-text">
+          <h2 id="images">IMAGES</h2>
+
+          <p>Met de &lt;img> tag kan je afbeeldingen linken naar je website.
+            <br>Deze tag heeft geen tweede waarmee je hem afsluit.
+          </p>
+
+          <p>Een voorbeeld van hoe de code eruit ziet:
+            <br>
+            <code>&lt;img src="url" alt="placeholder"></code>
+          </p>
+          <img class="none">
+        </div>
+        <img src="/img/image.png" alt="image">
+      </article>
+
+      <article class="layout-tags">
+        <h2 id="layout">LAYOUT TAGS</h2>
+        <p>
+          &lt;header> - Definieert een koptekst voor een document of sectie.
+          <br>
+          &lt;nav> - Definieert een reeks navigatielinks.
+          <br>
+          &lt;section> - Definieert een sectie in een document.
+          <br>
+          &lt;article> - Definieert een onafhankelijke, op zichzelf staande inhoud.
+          <br>
+          &lt;aside> - Definieert inhoud naast de inhoud (zoals een zijbalk).
+          <br>
+          &lt;footer> - Definieert een footer voor een document of sectie.
+          <br>
+          &lt;details> - Definieert aanvullende details die de gebruiker op verzoek kan openen en sluiten.
+          <br>
+          &lt;summary> - Definieert een kop voor het &lt;details> element.
+        </p>
+
+        <pre><code class="language-html">
+          &lt;!DOCTYPE html>
+          &lt;html lang="en">
+          &lt;head>
+              &lt;meta charset="UTF-8">
+              &lt;meta name="viewport" content="width=device-width, initial-scale=1.0">
+              &lt;title>Document&lt;/title>
+          &lt;/head>
+          &lt;body>
+
+               &lt;header>
+                     &lt;h1>TITLE OF YOUR CHOICE&lt;h1/>
+               &lt;/header>
+
+               &lt;section>
+                      &lt;nav>
+                         &lt;ul>
+                           &lt;li>&lt;a href="">&lt;/a>&lt;/li>
+                           &lt;li>&lt;a href="">&lt;/a>&lt;/li>
+                           &lt;li>&lt;a href="">&lt;/a>&lt;/li>
+                         &lt;/ul>
+                      &lt;/nav>
+
+                      &lt;article>
+                             &lt;h2>TITLE OF YOUR CHOICE.&lt;/h2>
+                             &lt;p>CONTENT&lt;/p>
+                      &lt;/article>
+               &lt;/section>
+
+          &lt;/body>
+          &lt;/html>
+        </code></pre>
+      </article>
+
+      <article class="html-tables">
+        <h2 id="tables">TABLES</h2>
+        <p>Een table kan je zien als een tabel, want het is letterlijk dat. <br>
+          tr - /tr is table row, dus makkelijk te onthouden. <br>
+          th - /th is als de bovenste rij van je tabel, de table headers, of het onderwerp van td - /td <br>
+          td - /td is de cel van de table, of de content.
+        </p>
+        <pre>
+          <code class="language-html">
+            &lt;table>
+              &lt;tr>
+                  &lt;th>A&lt;/th>
+                  &lt;th>B&lt;/th>
+                  &lt;th>C&lt;/th>
+              &lt;/tr>
+              &lt;tr>
+                  &lt;td>1&lt;/td>
+                  &lt;td>2&lt;/td>
+                  &lt;td>3&lt;/td>
+              &lt;/tr>
+              &lt;tr>
+                  &lt;td>1&lt;/td>
+                  &lt;td>2&lt;/td>
+                  &lt;td>3&lt;/td>
+              &lt;/tr>
+          &lt;/table>
+          </code>
+        </pre>
+      </article>
+
+      <article class="forms">
+        <div class="forms-text">
+          <h2 id="forms">FORMS</h2>
+
+          <p>Veel websites hebben een systeem waarmee gebruikers berichten kunnen sturen naar de beheerders.
+            <br>Dat gaat via contactformulieren.
+            <br>In HTML maak je die met '&lt;form>'.
+            <br>De tekstvakjes creëer je met '&lt;input>' met '&lt;label>' erboven een naam te geven aan ze.
+            <br>
+            &lt;input> vraagt ook om een type invoer die ervoor wilt gebruiken.
+            <br>We gebruiken "tekst" omdat we woorden willen gebruiken in de tekstvakjes.
+          </p>
+        </div>
+        <img src="./img/form.png" alt="form">
+      </article>
+
+      <article class="classes">
+        <h2 id="forms">CLASSES</h2>
+        <p>In je elementen/tags kan je ‘classes’ toevoegen, dit is als je een bepaald element apart wilt zetten van al
+          <br>
+          diezelfde tags die je gebruikt.
+          <br>
+          Dit is bijvoorbeeld handig wanneer je website gaat stylen met CSS, dat de paragraaf een ander soort styling
+          <br>
+          heeft dan de paragraaf zonder class.
+        </p>
+        <pre><code class="language-html">
+          &lt;p>Een paragraaf zonder class.&lt;/p>
+          &lt;p class="exception__paragraph">Dit is een voorbeeld, deze paragraaf heeft een class!&lt;/p>
+        </code></pre>
+      </article>
+
+      <article class="media-tags">
+        <h2 id="media">MEDIA TAGS</h2>
+        <p>Media tags is een groep tags die worden gebruikt voor media op een pagina, onder andere zijn dit:</p>
+        - audio <br>
+        - video <br>
+        - source <br>
+        - track <br>
+        - embed <br>
+        - iframe <br>
+        - svg <br>
+        - canvas <br>
+        - img <br>
+        - area <br>
+        - map <br>
+        - figure <br>
+        - figcaption
+      </article>
+
+      <article class="html-comments">
+        <h2 id="comments">COMMENTS</h2>
+
+        <p>Om opmerkingen bij je code toe te voegen om bijvoorbeeld een verandering uit te leggen aan een collega die
+          aan je code werkt hebben we een functie genaamd “Comments”
+          <br>Die schrijf je zo:
+        </p>
+        <code>&lt;!-- Voorbeeld van comment code --&gt;</code>
+        <p>Je kan dit overal in je HTML code plaatsen.</p>
+      </article>
+    </section>
+  </main>
+  
+  <footer>
+    <p>Are you a coder cause you code? Or do you code because you're a coder?</p>
+  </footer>
+
+  <script src="prism/prism.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>

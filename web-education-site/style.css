@@ -1,0 +1,405 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* FONT STYLING */
+@font-face {
+  font-family: Dabre;
+  src: url(./font/dabre.ttf.otf);
+}
+
+h2 {
+  font-family: Dabre;
+  font-weight: normal;
+  font-size: 40px;
+  text-transform: uppercase;
+}
+
+/* NAVBAR. */
+.sidebar {
+  position: fixed;
+  left: 0;
+  height: 100%;
+  width: 260px;
+  background-color: #11101d;
+
+}
+
+.logo {
+  width: 100%;
+  text-align: center;
+}
+
+.logo img {
+
+  height: 50px;
+}
+
+.home {
+  font-family: Dabre;
+  font-weight: normal;
+  font-size: 25px;
+}
+
+.sidebar a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.menu-content {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  margin-top: 40px;
+  overflow-y: scroll;
+}
+
+.menu-content::-webkit-scrollbar {
+  display: none;
+}
+
+.menu-items {
+  height: 100%;
+  width: 100%;
+  list-style: none;
+  transition: all 0.4s ease;
+}
+
+.submenu-active .menu-items {
+  transform: translateX(-56%);
+}
+
+.menu-title {
+  color: #fff;
+  padding: 15px 20px;
+  font-family: Dabre;
+  font-weight: normal;
+  font-size: 25px;
+}
+
+.item a,
+.submenu-item {
+  padding: 16px;
+  display: inline-block;
+  width: 100%;
+  border-radius: 12px;
+}
+
+.item i {
+  font-size: 12px;
+}
+
+ul li {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.item a:hover,
+.submenu-item:hover,
+.submenu .menu-title:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.submenu-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  font-family: Dabre;
+  font-weight: normal;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.submenu {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: calc(-100% - 26px);
+  height: calc(100% + 100vh);
+  background: #11101d;
+  display: none;
+}
+
+.show-submenu~.submenu {
+  display: block;
+}
+
+.submenu .menu-title {
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.submenu .menu-title i {
+  margin-right: 10px;
+}
+
+.navbar,
+.main {
+  left: 260px;
+  width: calc(100% - 260px);
+  transition: all 0.5s ease;
+  z-index: 1000;
+}
+
+.sidebar.close~.navbar,
+.sidebar.close~.main {
+  left: 0;
+  width: 100%;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: column nowrap;
+  position: absolute;
+  color: #fff;
+  align-items: center;
+  padding-left: 40px;
+  height: 65px;
+  font-size: 25px;
+  background-color: #000000;
+  cursor: pointer;
+}
+
+.sourcerers {
+  margin-left: 40px;
+  font-family: Dabre;
+  font-weight: normal;
+  font-size: 30px;
+}
+
+.navbar #sidebar-close {
+  cursor: pointer;
+}
+
+/* HOMEPAGE */
+.main {
+  display: flex;
+  justify-content: left;
+  flex-direction: column;
+  position: relative;
+  z-index: 100;
+  background: #ffffff;
+  height: 100%;
+}
+
+.main h1 {
+  color: #11101d;
+  font-size: 40px;
+  font-family: Dabre;
+  font-weight: normal;
+}
+
+.index h1 {
+  margin: 40px 0px 20px 80px;
+  font-size: 80px;
+}
+
+.home__content {
+  display: flex;
+  flex-direction: row;
+}
+
+.home__section p {
+  margin: 70px 0px 20px 80px;
+  font-size: 20px;
+}
+
+.home__text {
+  margin-top: 20vh;
+}
+
+.software__box {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 50vw;
+  top: 20vh;
+  width: 25vw;
+}
+
+.software__box h2 {
+  font-weight: normal;
+  font-size: 60px;
+}
+
+.soft__boxes {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #000000;
+  padding: 30px 10px 30px 10px;
+}
+
+.software__content {
+  display: flex;
+  flex-direction: row;
+  margin: 10px;
+}
+
+.box__text {
+  display: flex;
+  flex-direction: column;
+}
+
+.box__text p {
+  margin-left: 90px;
+}
+
+h3 {
+  margin-left: 90px;
+  font-family: Dabre;
+  font-weight: normal;
+  font-size: 30px
+}
+
+.box__img img {
+  height: 50px;
+}
+
+.box__img {
+  position: absolute;
+  left: 30px;
+  align-items: center;
+}
+
+
+/* HTML PAGES */
+.pages {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 8vh;
+}
+
+.html img {
+  margin: 10px 0px 10px 30vw;
+  width: 15vw;
+  height: 15vw;
+}
+
+.images {
+  display: flex;
+  gap: 150px;
+}
+
+.images img {
+  width: 500px;
+}
+
+.images-text {
+  align-self: flex-start;
+  flex-direction: column;
+}
+
+.html {
+  display: flex;
+  flex-direction: row;
+}
+
+/* CSS PAGES */
+
+article {
+  margin: 10px 20px 10px 20px;
+  padding: 25px;
+  border: 1px solid black;
+}
+
+.forms {
+  display: flex;
+  flex-direction: row;
+  gap: 150px;
+}
+
+.forms-text {
+  align-self: flex-start;
+  flex-direction: column;
+}
+
+.link-examplehovertxt {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.link-examplehovertxt:hover {
+  text-decoration-line: underline;
+  text-underline-offset: 2px;
+}
+
+.link-examplebuttontxt {
+  padding: 5px;
+  text-decoration: none;
+  color: black;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.link-examplebuttontxt:hover {
+  background-color: rgb(185, 216, 241);
+}
+
+/* BORDERS */
+.dotted {
+  border-style: dotted;
+}
+
+.dashed {
+  border-style: dashed;
+}
+
+.solid {
+  border-style: solid;
+}
+
+.double {
+  border-style: double;
+}
+
+.groove {
+  border-style: groove;
+}
+
+.ridge {
+  border-style: ridge;
+}
+
+.inset {
+  border-style: inset;
+}
+
+.outset {
+  border-style: outset;
+}
+
+.non {
+  border-style: none;
+}
+
+.hidden {
+  border-style: hidden;
+}
+
+.mix {
+  border-style: dotted dashed solid double;
+}
+
+
+/* FOOTER */
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  align-items: center;
+  text-align: center;
+}
+
+footer p {
+  background-color: #000000;
+  color: white;
+  font-size: 20px;
+  font-family: Dabre;
+  font-weight: normal;
+  text-transform: uppercase;
+  padding: 20px;
+}

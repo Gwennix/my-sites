@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>CSS | Source</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="prism/prism.css">
+  <link rel="icon" type="image/x-icon" href="./img/panda.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+</head>
+
+<body>
+  <nav class="sidebar">
+    <div class="logo">
+      <img src="./img/panda.png" alt="logo">
+    </div>
+    <div class="menu-content">
+      <ul class="menu-items">
+        <li class="item">
+          <a href="./index.html" class="home">HOME</a>
+        </li>
+        <li class="item">
+          <div class="submenu-item">
+            <span>HTML</span>
+            <i class="fa-solid fa-chevron-right"></i>
+          </div>
+          <ul class="menu-items submenu">
+            <div class="menu-title">
+              <i class="fa-solid fa-chevron-left"></i>
+              HTML
+            </div>
+            <li class="item">
+              <a href="./whatishtml.html">Wat is HTML?</a>
+            </li>
+            <li class="item">
+              <a href="#opzet">Opzet van een pagina</a>
+            </li>
+            <li class="item">
+              <a href="elemattri">Elementen en attributes</a>
+            </li>
+            <li class="item">
+              <a href="#headings">Headings</a>
+            </li>
+            <li class="item">
+              <a href="#paragraphs">Paragraphs</a>
+            </li>
+            <li class="item">
+              <a href="#links">Links</a>
+            </li>
+            <li class="item">
+              <a href="#images">Images</a>
+            </li>
+            <li class="item">
+              <a href="#layout">Layout Tags</a>
+            </li>
+            <li class="item">
+              <a href="#tables">Tables</a>
+            </li>
+            <li class="item">
+              <a href="#forms">Forms</a>
+            </li>
+            <li class="item">
+              <a href="#classes">Classes</a>
+            </li>
+            <li class="item">
+              <a href="#media">Media Tags</a>
+            </li>
+            <li class="item">
+              <a href="#comments">Comments</a>
+            </li>
+          </ul>
+        </li>
+        <li class="item">
+          <div class="submenu-item">
+            <span>CSS</span>
+            <i class="fa-solid fa-chevron-right"></i>
+          </div>
+          <ul class="menu-items submenu">
+            <div class="menu-title">
+              <i class="fa-solid fa-chevron-left"></i>
+              CSS
+            </div>
+            <li class="item">
+              <a href="./watiscss.html">What is css?</a>
+            </li>
+            <li class="item">
+              <a href="#add">Hoe pas je het toe?</a>
+            </li>
+            <li class="item">
+              <a href="#syntax">Syntax</a>
+            </li>
+            <li class="item">
+              <a href="#select">Selectors</a>
+            </li>
+            <li class="item">
+              <a href="#cscomments">Comments</a>
+            </li>
+            <li class="item">
+              <a href="#color">Kleuren</a>
+            </li>
+            <li class="item">
+              <a href="#font">Teksten</a>
+            </li>
+            <li class="item">
+              <a href="#border">Borders</a>
+            </li>
+            <li class="item">
+              <a href="#unit">Units</a>
+            </li>
+            <li class="item">
+              <a href="#background">Achtergronden</a>
+            </li>
+            <li class="item">
+              <a href="#margins">Margin & Padding</a>
+            </li>
+            <li class="item">
+              <a href="#boxes">Box Model</a>
+            </li>
+            <li class="item">
+              <a href="#heights">Height & Width</a>
+            </li>
+            <li class="item">
+              <a href="#link">Links</a>
+            </li>
+            <li class="item">
+              <a href="#list">Lists</a>
+            </li>
+            <li class="item">
+              <a href="#cstable">Tables</a>
+            </li>
+            <li class="item">
+              <a href="#display">Display</a>
+            </li>
+            <li class="item">
+              <a href="#positions">Position</a>
+            </li>
+            <li class="item">
+              <a href="#flexx">Flexbox</a>
+            </li>
+            <li class="item">
+              <a href="#medias">Media queries</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <nav class="navbar">
+    <i class="fa-solid fa-bars" id="sidebar-close"></i>
+    <div class="sourcerers">SOURCE'RERS</div>
+  </nav>
+
+  <main class="main">
+    <section class="pages">
+      <article class="css">
+        <h1>WAT IS CSS?</h1>
+        <p>Cascading Style Sheets, of terwijl 'CSS' Hiervoor gebruiken wij om onze website te ’stylen’. CSS je HTML
+          code
+          <br>
+          en soort vorm kan geven, i.p.v. dat al je code onderaan gestapeld is, je kan dan leuke kleurtjes aan je
+          fonts
+          <br>
+          geven, of achtergronden plaatsen op een pagina.
+        </p>
+      </article>
+
+      <article class="toepassen">
+        <h2 id="add">Hoe pas je het toe?</h2>
+        <p>Je kan CSS op drie manieren toepassen, de meest gebruikte manier is uiteraard dat je een nieuwe file
+          ‘style.css’ noemt en dan boven je body, in de head een link tag gebruikt waar je als ‘href’ dezelfde
+          ‘style.css’
+          in zet:</p>
+        <pre>
+              <code class="language-html">
+                &lt;link rel="stylesheet" href="style.css">
+              </code>
+            </pre>
+        <p>De tweede manier is om in je tag ‘style = “__:__;”’ te zetten:</p>
+        <pre>
+              <code class="language-html">
+                &lt;p style="color: blue;">Lorem&lt;/p>
+              </code>
+            </pre>
+        <p>De derde manier is door style in de body te zetten:</p>
+        <pre>
+              <code class="language-css">
+            &lt;style>
+                  p {
+                      color: red;
+                  }
+            &lt;/style>              
+              </code>
+            </pre>
+      </article>
+
+      <article class="syntax">
+        <h2 id="syntax">Syntax</h2>
+        <p>In CSS gebruik je heel andere code dan in HTML.</p>
+        <br>
+        <img src="./img/syntax.png" alt="syntax">
+        <p>Je begint je code met een selector.
+          <br>Die refereert naar een element in je HTML.
+          <br>De haakjes heten semicolon brackets. Daarmee kan je de code voor het stijlen inzetten.
+          <br>Die code bestaat uit properties en values.
+          <br>Properties is hetgene dat je de code wilt laat doen zoals de kleur of lettertype veranderen.
+          <br>Value is de keuze voor wat de property laat zien zoals welke kleur je het wilt worden.
+        </p>
+
+      </article>
+
+      <article class="selectors">
+        <h2 id="select">Selectors</h2>
+        <p>Dit zijn de codes die je gebruikt in CSS zelf, hiervoor gebruik je niet dezelfde codes die je gebruik in
+          HTML. Je hebt allerlei verschillende selectors in CSS.
+          <br>
+          Eenvoudige selectors (selecteer elementen op basis van naam, id, klasse)
+          <br>
+          Combinator-selectors (selecteer elementen op basis van een specifieke relatie daartussen)
+          <br>
+          Pseudo-klasse selectors (selecteer elementen op basis van een bepaalde status)
+          <br>
+          Pseudo-elementenkiezers (selecteer en stijl een deel van een element)
+          <br>
+          Attribuutkiezers (selecteer elementen op basis van een attribuut of attribuutwaarde)
+        </p>
+        <br>
+        <p>
+          In HTML maak je classes aan in een element, maar hoe geef je dat in css?
+          <br>
+          Simple, met css voeg je een '.' ervoor.
+        </p>
+      </article>
+
+      <article class="css-comments">
+        <h2 id="cscomments">Comments</h2>
+        <p>Een CSS comment kan je gebruiken met de shortcut ‘ctrl + /,’ er komt dan automatisch in je CSS ‘/* */’ te
+          staan. Uiteraard schrijf je er tussen wat je wilt uitleggen/organiseren. CSS comments zijn er om uit te
+          leggen wat je doet, of te organiseren zodat het duidelijker is. Comments maken het ook makkelijker om dingen
+          te debuggen. </p>
+        <br>
+        <pre>
+              <code class="language-css">
+                /* Sectie grootte */
+                section {
+                  width: 500px;
+                  height: 500px;
+                }
+              </code>
+            </pre>
+      </article>
+
+      <article class="colors">
+        <h2 id="color">Kleuren</h2>
+        <p>Met styling kan je zowel de kleuren als die van de achtergrond aanpassen.
+          <br>Voor de letters is het "Colors" en voor de achtergrond "background-color".
+          <br>Je kan ze gebruiken voor al je headings, sections, paragraphs en divs.
+        </p>
+        <br>
+        <p>De kleuren kan je met zowel woorden als kleurcodes aangeven.
+          <br>Dus "color: black" of "color: #0000".
+        </p>
+        <br>
+        <p>Variaties zijn daarin ook mogelijk zoals
+          <br>“background-color:rgba(255, 99, 71, 0.5)”
+        </p>
+      </article>
+
+      <article class="fonts">
+        <h2 id="font">Fonts</h2>
+        <p>
+          Teksten aanpassen kan je natuurlijk ook doen, hier aan geef je aan welk element in je HTML wilt gebruiken,
+          <br>
+          voor paragrafen gebruik je de 'p' element, en voor titles de ‘h1’ element, of ‘h2’ en etc.
+        </p>
+        <pre><code class="language-css">
+            h1 {
+              color: blue;
+              text-align: center;
+              line-height: 10px;
+              font-size: 30px;
+              font-family: 'Courier New', Courier, monospace;
+              font-style: italic;
+            }
+          </code></pre>
+        <p>
+          Je hebt allemaal verschillende soorten css properties waarbij je je gekozen element van HTML wilt aanpassen.
+          <br>
+          Hierbij zou ik wel willen zeggen dat je vrij bent om door te puzzelen totdat de element is aangepast op jouw
+          <br>
+          eigen manier hoe je dat wilt!
+        </p>
+      </article>
+
+      <article class="borders">
+        <h2 id="border">Borders</h2>
+        <p>Er zijn meerdere borders die je kan gebruiken als een omtrek bij bijvoorbeeld een paragraaf in je tekst. In
+          CSS, zet je de class of de tag waar je een border omheen wilt, dan schrijf je tussen de {}, ‘border-style:
+          __;’ je kan kiezen uit:</p>
+        <br>
+        <p class="solid">solid</p>
+        <br>
+        <p class="double">double</p>
+        <br>
+        <p class="groove">groove</p>
+        <br>
+        <p class="ridge">ridge</p>
+        <br>
+        <p class="inset">inset</p>
+        <br>
+        <p class="outset">outset</p>
+        <br>
+        <p class="dotted">dotted</p>
+        <br>
+        <p class="dashed">dashed</p>
+        <br>
+        <p class="mix">mixed</p>
+        <br>
+        <p class="hidden">hidden</p>
+        <br>
+        <p class="non">none</p>
+        <pre>
+              <code class="language-css">
+                <style>
+                  .solid {border-style: solid;}
+                  .double {border-style: double;}
+                  .groove {border-style: groove;}
+                  .ridge {border-style: ridge;}
+                  .inset {border-style: inset;}
+                  .outset {border-style: outset;}
+                  .dotted {border-style: dotted;}
+                  .dashed {border-style: dashed;}
+                  .hidden {border-style: hidden;}
+                  .none {border-style: none;}
+                  .mix {border-style: dotted dashed solid double;}
+              </style>           
+              </code>
+            </pre>
+      </article>
+
+      <article class="units">
+        <h2>Units</h2>
+        <p>Units zijn waardes waar je in je code specificaties mee kunt aangeven.
+          <br>Zoals lengte en breedte.
+        </p>
+        <br>
+        <p>Voorbeeld:</p>
+        <pre><code class="language-css">
+        h1 {
+          font-size: 60px;
+        }
+      </code></pre>
+      </article>
+
+      <article class="backgrounds">
+        <h2 id="background">Achtergronden</h2>
+        <p>
+          In je body, div, h1, h5, p, wat dan ook, kan je 'background-color' zetten met daar achter een kleur met RGB,
+          <br>
+          sRGB of iets anders.
+          <br>
+          Maar het hoeft niet per se een kleur te zijn, misschien wilt u wel een foto als acthergrond, dan gebruik je
+          <br>
+          'background-image' met daar achter een url naar de foto. Het is handig als je die foto hebt opgeslagen zodat
+          <br>
+          je die niet kwijt raakt.
+          <br>
+          De foto is soms wel eens te klein... een oplossing hiervoor is om 'background-repeat: no-repeat;' te gebruiken
+          <br>
+          en dan je foto resizen.
+          <br>
+          Als het doel is om de foto juist een repeat te laten hebben, dan verander je het naar iets anders, of laat je
+          <br>
+          het zo.
+        </p>
+      </article>
+
+      <article class="margin">
+        <h2 id="margins">Margin & Padding</h2>
+        <p>Met margin kun je de ruimte <b><i>om</i></b> elementen heen bepalen. <br>
+          Met padding kun je de ruimte <b><i>in</i></b> elementen bepalen.
+        </p> <br>
+        <p>Met Ctrl + Shift + C kan je inspect (of rechtermuisknop -> inspect) openen, ergens onderaan zie je dan:</p>
+        <br>
+        <img src="./img/2.png" alt="margin, border, padding, content.">
+        <p>Boven zie je margin en padding in ‘inspect,’ onder zie je een screenshot van de (simpele) toegepaste
+          versie. De kleuren zijn soortgelijk waardoor het makkelijk te zien is wat wat is.</p> <br>
+        <img src="./img/1.png" alt="toegepaste margin, border, padding, content.">
+        <br>
+        <p>In CSS ziet het er dan het zelfde uit:</p>
+        <pre>
+            <code class="language-css">
+              section {
+                margin-top: 50px;
+                padding: 40px 0px 40px 10px;
+              }
+            </code>
+          </pre>
+      </article>
+
+      <article class="box">
+        <h2 id="boxes">Box Model</h2>
+        <p>
+          In CSS wordt de term "boxmodel" gebruikt als het over ontwerp en lay-out gaat.
+
+          Het CSS-boxmodel is in wezen een box die om elk HTML-element heen loopt. Het bestaat uit: conent, padding,
+          borders en margins. De onderstaande afbeelding illustreert het doosmodel:
+
+          Content - De inhoud van de doos, waar tekst en afbeeldingen verschijnen
+          Padding - Maakt een gebied rond de inhoud leeg. De vulling is transparant
+          Border - Een rand die rond de opvulling en inhoud loopt
+          Margin - Maakt een gebied buiten de grens leeg. De marge is transparant
+
+        </p>
+      </article>
+
+      <article class="height">
+        <h2 id="heights">Height & Width</h2>
+        <p>Met Height & Width kun je de grootte en breedte aanpassen van elementen.
+          <br>Je kunt er alleen niet de padding, borders, en margins mee aanpassen.
+        </p>
+        <br>
+        <p>Voorbeeld:</p>
+        <pre><code class="language-css">
+          div {
+             height: 50px;
+             width: 100%;
+          }
+      </code></pre>
+      </article>
+
+      <article class="links">
+        <h2 id="link">Links</h2>
+        <p>Er zijn vele manieren om links toe te passen in CSS, je hebt bijv. een tekst waar je op kunt klikken die je
+          dan automatisch naar een andere page stuurt. Of misschien wel een button (met of zonder tekst) die je naar
+          een andere page stuurt.</p>
+        <br>
+        <p>Links kun je op verschillende manieren stylen, hier een paar voorbeelden:</p>
+        <br>
+        <a href="#link" class="link-examplehovertxt">Tekst Link met hover</a> <button class="link-examplebuttontxt"><a
+            href="#link" class="link-examplebuttontxt">Button
+            link met hover</a></button>
+        <br>
+        <br>
+        <p>Hover is een veel voorkomend iets met het stylen van bijv. buttons. Het houd in dat als je met je muis over
+          een stuk tekst of een link of een button gaat dat de style van die button veranderd. De code hierboven ziet
+          er dan alsvolgt uit in CSS:</p>
+        <pre>
+              <code class="language-css">
+                .link-examplehovertxt {
+                  text-decoration: none;
+                  color: rgb(0, 0, 0);
+                  font-family: 'Courier New', Courier, monospace;
+                }
+                
+                .link-examplehovertxt:hover {
+                  text-decoration-line: underline;
+                  text-underline-offset: 2px;
+                }
+                
+                .link-examplebuttontxt, a {
+                  padding: 5px;
+                  text-decoration: none;
+                  color: black;
+                  font-family: 'Courier New', Courier, monospace;
+                }
+                
+                .link-examplebuttontxt:hover {
+                  background-color: rgb(185, 216, 241);
+                }
+              </code>
+            </pre>
+      </article>
+
+      <article class="Lists">
+        <h2 id="list">Lists</h2>
+        <p>In HTML heb je geleerd hoe je lists kan maken.</p>
+        <br>
+        <p>Die bestonden uit:
+          <li>unordered lists <code>ul</code> - Lijst met bolletjes</li>
+          <li>ordered lists <code>ol</code> - Lijst met nummers of letters</li>
+        </p>
+        <br>
+        <p>Nu met de kracht van CSS kun je nog meer!</p>
+        <p>Zoals:</p>
+        <li>Meer markers voor je ordered lists</li>
+        <li>Meer markers voor je unordered lists</li>
+        <li>Een afbeelding gebruiken als marker</li>
+        <li>Een achtergrondkleur instellen voor je list en de items.</li>
+
+        <p>Met de <u>list-style-type</u> kun je de marker veranderen van je list.</p>
+        <p>Opties hiervoor zijn circle, square, upper-roman en lower-alpha.</p>
+        <pre><code class="language-css">
+            ul {
+              list-style-type: circle;
+            }
+          </code></pre>
+        <p>
+          Met list-style-type:none kun je ze ook verwijderen.
+          <br>
+          Door “margin:0" en "padding:" toe te voegen kun je ook de margins en paddings erbij verwijderen.
+          <br>
+          Met de list-style-image kun je een afbeelding gebruiken als marker.
+        </p>
+        <br>
+        <p>Voorbeeld:</p>
+        <pre><code class="language-css">
+            ul {
+              list-style-image: url('sqpuprle.gif');
+            }
+          </code></pre>
+        <p>
+          Met de list-style-position kan je die positie van de markers bepalen.
+          <br>
+          Met "Inside” en “Outside” geef je de positie aan.
+        </p>
+        <br>
+        <p>Voorbeeld:</p>
+        <pre><code class="language-css">
+            ul {
+              list-style-position: outside;
+            }
+            
+            ul {
+              list-style-position: inside;
+            }
+          </code></pre>
+      </article>
+
+
+      <article class="tables">
+        <h2 id="cstable">Tables</h2>
+        <p>
+          Als je hier bent gekomen, weet je waarschijnlijk al wat tables zijn en wil je ze nu gaan stylen.
+          <br>
+          Zonder CSS, zien jouw tables er lelijk en verwarrend uit, dus is het gebruiken van CSS bijna verplicht.
+          <br>
+          Dit kan je met borders oplossen. Gebruik de 'border' property bij je table, th en td, je krijgt dan bij je
+          <br>
+          table, th en td elementen een eigen border.
+          <br>
+          Dit ziet er niet zo mooi uit omdat elke border hun eigen sectie heeft. Zet dan bij table de property
+          <br>
+          'border-collapse: collapse;' het word dan allemaal 1 lijn, i.p.v. 2 lijnen.
+        </p>
+      </article>
+
+      <article class="display">
+        <h2 id="display">Display</h2>
+        <p>Display geeft aan of een element een block of inline box is en de layout voor de children, zoals flow
+          layout, grid of flex.<br>
+          Voor display gebruiken wij 'flex' nu het meest.</p>
+      </article>
+
+      <article class="position">
+        <h2 id="positions">Position</h2>
+        <p>Met de position code kun je ervoor kiezen hoe je elementen reageren op het scrollen van de pagina waarop ze
+          staan.
+          <br>De opties hierin zijn als volgt:
+        </p>
+        <br>
+        <h3>static</h3>
+        <p>De standard positive. Hiermee zal alleen wel de top, right, bottom, left, en z-index codes geen invloed
+          meer hebben.</p>
+        <br>
+        <h3>relative</h3>
+        <p>De element gaat mee met de normale flow van de pagina.
+          <br>Het relativeer zichzelf aan de top, right, bottom, en left codes.
+        </p>
+        <br>
+        <h3>absolute</h3>
+        <p>Je element zit niet meer in de flow van de pagina en zijn plek wordt ook opgegeven.
+          <br>Hij wordt gepositioneerd bij zijn dichtstbijzijnde buur-element of de rand van de div waar het zich in
+          bevindt behalve als er top, right, bottom, en left codes aanwezig zijn. Dan volgt het die.
+        </p>
+        <br>
+        <h3>fixed</h3>
+        <p>Net als fixed zit je element niet meer in de flow van de pagina en wordt zijn plek opgegeven.
+          <br>In plaats daarvoor wordt hij gepositioneerd in de viewport van het scherm.
+          <br>Alleen als er als er top, right, bottom, en left codes aanwezig zijn zal hij die volgen.
+        </p>
+        <br>
+        <h3>sticky</h3>
+        <p>De element staat op de normale flow van de pagina.
+          <br>Hij wordt gepositioneerd bij zijn dichtstbijzijnde buur-element inclusief tables of de rand van de div
+          waar het zich in bevindt gebaseerd op top, right, bottom, en left codes.
+          <br>Deze positie heeft geen invloed op de rest van de aanwezige elementen.
+        </p>
+      </article>
+
+      <article class="Flexbox">
+        <h2>Flexbox</h2>
+        <p>
+          Flexbox is de term die word gebruikt om alles gemakkelijk te positioneren, om dit te gebruiken zet je
+          <br>
+          'display: flex;' in jouw container kan je dan een directie aan de 'children' geven.
+          <br>
+        </p>
+        <br>
+        <p>
+          flex-direction
+          <br>
+          flex-wrap
+          <br>
+          flex-flow
+          <br>
+          justify-content
+          <br>
+          align-items
+          <br>
+          align-content
+          <br>
+        </p>
+        <br>
+        <p>
+          order
+          <br>
+          flex-grow
+          <br>
+          flex-shrink
+          <br>
+          flex-basis
+          <br>
+          flex
+          <br>
+          align-self
+          <br>
+        </p>
+        <p>
+          Voor meer informatie, is dit een hele handige link naar een volle guide.
+        </p>
+        <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target="_blank">Klik hier.</a>
+      </article>
+
+      <article class="media">
+        <h2 id="medias">Media Queries</h2>
+        <p>Je kan media queries gebruiken om je website responsive te maken, dat houd in dat je de grootte van jouw
+          website kan aanpassen en dat het er nog steeds goed uit ziet. Dit is voornamelijk gebruikelijk als je een
+          website wilt voor beide je telefoon en laptop.</p>
+        <pre>
+              <code class="language-css">
+                @media screen and (max-width: 767px) {
+                  /* CSS CODE HERE */
+              }              
+              </code>
+            </pre>
+      </article>
+      </section>
+      <footer>
+        <p>Are you a coder cause you code? Or do you code because you're a coder?</p>
+      </footer>
+  </main>
+  <script src="prism/prism.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
