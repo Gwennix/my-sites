@@ -1,0 +1,404 @@
+@import "tailwindcss";
+
+*:root {
+    background-color: rgb(236, 154, 154);
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    top: 0;
+    padding: 0px;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  margin-top: 70px;
+  margin-left: 4px; 
+  gap: 10px;
+}
+
+footer img{
+  width: 55px;
+  height: 55px;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0; 
+  left: 5px;       
+  left: 0;      
+  width: 65px;      
+  height: 100vh;      
+  background-color: white; 
+  z-index: 10; 
+  
+}
+
+/* nav {
+  display: flex;
+  justify-content: space-between;
+  Position: fixed;
+  width: 100%;
+  font-family: Caveat;
+  flex-wrap: wrap;
+  background: #ffffff;
+  margin: 0;
+  top: 0;
+  z-index: 9;
+    
+  }
+
+  nav ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+  }
+  nav li {
+    font-size: 25px;
+    padding: 0 4rem 0 4rem;
+  } */
+
+ 
+
+  .divider {
+    border: none;
+    height: 1px;
+    background-color: white;
+    margin: 10px 0;
+  }
+
+  /* Home */
+
+  /* .intro {
+    margin-top: 50px;
+    position: relative;
+    min-height: 50vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 250px;
+    height: 580px;
+  }
+
+  .intro_text {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+  }
+
+  .intro_img img {
+    width: 400px;
+  } */
+
+  /* About Me  */
+
+  /* .about_me {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+  } */
+
+  /* .about_headers {
+    display: flex;
+    justify-content: space-between;
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    margin-right: 20px;
+    height: 100%;
+    font-size: 38px;
+    color: white;
+    gap: 20px;
+  } */
+
+  /* .profile {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+  } */
+
+
+  /* .profile_img img{
+    object-fit: cover;
+    margin-top: 50px;
+    width: 220px;
+    height: 400px;
+  } */
+
+  /* .profile_text {
+    margin-top: 50px;
+    max-width: 500px;
+  } */
+
+  /* .qualities {
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+  } */
+
+  /* .qualities_img {
+    display: flex;
+    justify-content: space-evenly;
+  } */
+
+  /* .qualities_img img{
+    width: 150px;
+    height: 150px;
+  } */
+
+  /* .qualities_text {
+    display: flex;
+    justify-content: space-evenly;
+  } */
+
+  /* .motivation {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  } */
+
+  /* .motivation_text {
+    align-self: center;
+    width: 800px;
+    height: 500px;
+    background-color: white;
+    box-shadow: 10px 10px;
+    margin-top: 50px;
+    text-align: left;
+  } */
+
+  /* SKILLS */
+
+  .skills {
+    margin-left: 65px;
+    margin-top: 80px;
+  }
+
+  .languages {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+  }
+
+  .languages img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .platforms {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .platforms img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .software {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .software img {
+    width: 150px;
+    height: 150px;
+  }
+
+
+.skills {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.carousel-wrapper {
+  width: 100%;
+  overflow: hidden; 
+  position: relative;
+}
+
+.carouselrow {
+  display: flex;
+  animation: slide 15s linear infinite; 
+}
+
+.carouselrow-2 {
+  display: flex;
+  animation: 35s slide infinite linear;
+}
+
+.carousel-itemrow {
+  transition: transform 0.5s ease;
+  object-fit: contain;
+  width: 50vw;
+  height: 15vh;
+}
+
+.carousel-itemrow-2 {
+  transition: transform 30s ease;
+  object-fit: contain;
+  width: 50vw;
+  height: 15vh;
+}
+
+  /* PROJECTS */
+
+.project_header h1 {
+  display: flex;
+  justify-content: center;
+  margin-left: 65px;
+  margin-top: 80px;
+}
+
+.project_list {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin-left: 65px;
+}
+
+.project_thumbnail {
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  width: 300px;
+  height: 100px;
+  padding: 5px;
+  box-shadow: 3px 5px 15px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.project_thumbnail:hover {
+  transform: translateY(-5px);
+  box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.project_thumbnail h2 {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  color: #333;
+  margin-top: 35px;
+}
+
+.projectpage img {
+  width: 1100px;
+  height: 600px;
+}
+
+.projectpage {
+  margin-top: 80px;
+  margin-left: 65px;
+}
+
+  /* TIMELINE */
+
+.timeline-container {
+  position: relative;
+  max-width: 1200px;
+  width: 100vw;
+  margin: 0 auto;
+}
+.timeline-container h2 {
+  font-size: 30px;
+}
+
+.timeline-container h3 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.timeline-container::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: white;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+  z-index: 0;
+}
+
+#tcr {
+  width: 180px;
+  height: 70px;
+}
+
+#cwr {
+  width: 190px;
+  height: 80px;
+}
+
+#microsoft {
+  width: 220px;
+  height: 80px;
+}
+
+#albeda {
+  width: 240px;
+  height: 190px;
+}
+
+  /* CONTACT */
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  font-size: 25px;
+  border-radius: 15px;
+  background-color: #f68b8b;
+  padding: 20px;
+  float: left;
+  margin-left: 65px;
+  margin-top: 60px;
+}
+
+.contact_name {
+  font-size: 20px;
+  border-radius: 5px;
+  background-color: #f68b8b;
+  padding: 20px;
+  float: left;
+}
+
+.contact_email {
+  font-size: 20px;
+  border-radius: 5px;
+  background-color: #f68b8b;
+  padding: 20px;
+  float: left;
+}
+
+.contact_message {
+  font-size: 20px;
+  border-radius: 5px;
+  background-color: #f68b8b;
+  padding: 20px;
+  float: left;
+}
+
+.contact div {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact {
+  width: 50%;
+}
+
+.contact input {
+  padding: 10px;
+}
+
+.contact textarea {
+  height: 250px ;
+}
+
+.contact button {
+  width: 200px;
+  margin-left: 20px;
+  padding: 15px;
+}
+
